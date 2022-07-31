@@ -1,0 +1,16 @@
+*.csv
+*.txt
+__pycache__/
+*.zip
+*.png
+*.npz
+*.ipynb
+*.slxc
+.DS_Store
+.idea/
+TempLogIn/
+attic/
+data/
+intermediate_formulae/
+learningSTL/
+learningSTL/EnumerativeSolver/slprj

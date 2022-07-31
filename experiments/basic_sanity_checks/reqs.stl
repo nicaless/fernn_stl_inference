@@ -1,0 +1,12 @@
+param c = 0
+
+testUntil := (x[t] > c) until (y[t] > c)
+testEv := ev (x[t] > c)
+testAlw := alw (x[t] > c)
+testNext := z[t] > c
+testAnd := (x[t] > c) and (y[t] > c)
+testOr := (x[t] > c) or (y[t] > c)
+testEvAlw := ev (alw (x[t] > c))
+testAlwEv := alw (ev (x[t] > c))
+testAlwSelect := alw (y[t] > c)
+testAtomSelection := ev (z[t] > c)

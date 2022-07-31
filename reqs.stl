@@ -1,0 +1,25 @@
+param c = -0.65
+param c = 0
+param d = 0
+param e = -3
+param f = 0.5
+param T = 10
+
+testSpecAtom := (x[t] > c)
+testSpecAtomD := (x[t] < d)
+testSpecOr := (x[t] > c) or (x[t] > f)
+testSpecEv := ev (x[t] < d)
+testSpecEventually := ev (x[t] > c)
+testSpecEvBounded := ev_[1, 2] (x[t] < d)
+testSpecAlwaysLessD := alw (x[t] < d)
+testSpecAlways := alw (x[t] > c)
+testSpecAlwBounded := alw_[1, 2] (x[t] < d)
+testSpecUntil := (x[t] < c) until (x[t] > c)
+PUntilN := (x[t] > c) until (x[t] < c)
+testSpecEvAlw := ev (alw (x[t] < d))
+testSpecEvAlwLearn := ev (alw (x[t] > c))
+testSpecPhi := (x[t] > d)
+testSpecPsi := (x[t] > e)
+testSpecAlwPhi := alw (x[t] > d)
+testSpecPhiUntilPsi := (x[t] > d) until (x[t] > e)
+testSpecProjGT := alw (x >= .406 or y >= 1.357) and ev (x >= 1.04 and y < 1.09)
