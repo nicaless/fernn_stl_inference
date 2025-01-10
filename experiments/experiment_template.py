@@ -3,11 +3,6 @@ sys.path.append('/home/nicaless/repos/gan_tl')
 
 import argparse
 from formulas.choose_length import choose_length
-# from formulas.choose_depth import choose_depth
-# from formulas.two_deep import two_deep
-# from formulas.three_deep import three_deep
-# from formulas.four_deep import four_deep
-# from formulas.five_deep import five_deep
 import json
 import numpy as np
 import tensorflow as tf
